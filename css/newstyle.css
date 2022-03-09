@@ -1,0 +1,20 @@
+.red {
+    background-color: #DC143C;
+}
+
+.green {
+    background-color: #00BFFF;
+}
+
+.text-red {
+    color: #DC143C !important;
+}
+
+.text-green {
+    color: #00BFFF !important;
+}
+
+.logo { 
+    font-size: 34px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
