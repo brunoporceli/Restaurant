@@ -27,7 +27,7 @@
             <div class="row mt-5">
                 <div class="col-sm-12">
                     <div class="card red">
-                        <h6 class="box-title m-3">Garçom Henrique da Silva</h6>
+                        <h4 class="box-title m-3">Garçom Henrique da Silva</h4>
                     </div>
                 </div>
             </div>
@@ -44,32 +44,44 @@
                                     <div class="row">
                                         <div class="form-group mb-4 mb-4">
                                             <label class="col-sm-12">Produto</label>
-
-                                            <div class="col-sm-12 border-bottom">
-                                                <select class="form-select shadow-none p-0 border-0 form-control-line">
-                                                    <option>Coca Cola Zero 1L</option>
-                                                    <option>Suco de Maça 350ML</option>
-                                                    <option>Frango à passarinho 2 pessoas</option>
-                                                    <option>Nhoque de batata 2 pessoas</option>
-                                                    <option>Coca Cola Zero 350ML</option>
-                                                    <option>Suco de laranja 500ML</option>
-                                                    <option>Suco de caju 500ML</option>
-                                                    <option>Suco de Maça 350ML</option>
-                                                    <option>Bife à parmegiana 2 pessoas</option>
-                                                </select>
+                                            <div class="row">
+                                                <div class="col-10 border-bottom">
+                                                    <select class="form-select shadow-none p-0 border-0 form-control-line">
+                                                        <option>Coca Cola Zero 1L</option>
+                                                        <option>Suco de Maça 350ML</option>
+                                                        <option>Frango à passarinho 2 pessoas</option>
+                                                        <option>Nhoque de batata 2 pessoas</option>
+                                                        <option>Coca Cola Zero 350ML</option>
+                                                        <option>Suco de laranja 500ML</option>
+                                                        <option>Suco de caju 500ML</option>
+                                                        <option>Suco de Maça 350ML</option>
+                                                        <option>Bife à parmegiana 2 pessoas</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-2 border-bottom">
+                                                    <select class="form-select shadow-none p-0 border-0 form-control-line">
+                                                        <option>Mesa 1</option>
+                                                        <option>Mesa 2</option>
+                                                        <option>Mesa 3</option>
+                                                        <option>Mesa 4</option>
+                                                        <option>Mesa 5</option>
+                                                        <option>Mesa 6</option>
+                                                        <option>Mesa 7</option>
+                                                        <option>Mesa 8</option>
+                                                        <option>Mesa 9</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group mb-4">
                                         <label class="col-md-12 p-0">Observação</label>
                                         <div class="col-md-12 border-bottom p-0">
-                                            <textarea rows="5" class="form-control p-0 border-0"></textarea>
+                                            <textarea rows="3" class="form-control p-0 border-0"></textarea>
                                         </div>
                                     </div>
-                                    <div class="form-group mb-4">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-success">Salvar</button>
-                                        </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-success">salvar</button>
                                     </div>
                                 </form>
                             </div>
@@ -87,37 +99,76 @@
                                 <th class="border-top-0">Pedido</th>
                                 <th class="border-top-0">Tipo</th>
                                 <th class="border-top-0">Código</th>
+                                <th class="border-top-0">Mesa</th>
                                 <th class="border-top-0">Observação</th>
+                                <th class="border-top-0">#</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
                                 <td>
-                                    <p>Coca Cola Zero 1L</p>
-                                    <p>Suco de Maça 350ML</p>
-                                    <p>Frango à passarinho 2 pessoas</p>
+                                    Coca Cola Zero 1L
                                 </td>
                                 <td>
-                                    <p>Bebida</p>
-                                    <p>Bebida</p>
-                                    <p>Aperitivo</p>
+                                    Bebida
                                 </td>
                                 <td>
-                                    <p>B-29</p>
-                                    <p>B-11</p>
-                                    <p>A-74</p>
+                                    B-29
                                 </td>
                                 <td>
-                                    <p>.</p>
-                                    <p>.</p>
-                                    <p>Sem sal</p>
+                                    Mesa 1
                                 </td>
+                                <td></td>
+                                <td><i class="fas fa-fw fa-trash col-auto"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    Suco de Maça 350ML
+                                </td>
+                                <td>
+                                    Bebida
+                                </td>
+                                <td>
+                                    B-11
+                                </td>
+                                <td>
+                                    Mesa 1
+                                </td>
+                                <td></td>
+                                <td><i class="fas fa-fw fa-trash col-auto"></i></td>
+                            </tr>
+                                <td>3</td>
+                                <td>
+                                    Frango à passarinho 2 pessoas
+                                </td>
+                                <td>
+                                    Aperitivo
+                                </td>
+                                <td>
+                                    A-74
+                                </td>
+                                <td>
+                                    Mesa 1
+                                </td>
+                                <td>
+                                    Sem sal
+                                </td>
+                                <td><i class="fas fa-fw fa-trash col-auto"></i></td>
                             </tr>
                         </tbody>
                     </table>           
                 </div>
             </div> 
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-success m-3">finalizar pedido</button>
+                </div>
+                <div class="col-6">
+                    <a class="btn btn-dark m-3" style="float: right;" href="reportwaiter.html">relatório de pedido</a>
+                </div>
+            </div>
         </div>
         
         <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
