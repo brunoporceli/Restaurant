@@ -196,8 +196,8 @@
                                 <li class="ms-auto"><span class="counter text-dark">R$ 0,00</span></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-12">
+                    </div>   
+                    <div class="col-lg-3 col-md-12" id="Modal">
                         <div class="white-box analytics-info red">
                             <h3 class="box-title">Mesa 2</h3>
                             <ul class="list-inline two-part d-flex align-items-center mb-0">
@@ -498,11 +498,125 @@
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Pagamento mesa 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>  
+                <h4><b>Nota Fical</b></h4>
+                <hr>
+                <h4><b>Consumo</b></h4>
+                <div class="row">
+                    <div class="col-9">
+                        Suco de abacaxi 500ML
+                    </div>
+                    <div class="col-3" style="float: right;">
+                        <i>R$ 5,50</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        Lasanha de berinjela 2 pessoas
+                    </div>
+                    <div class="col-3" style="float: right;">
+                        <i>R$ 35,75</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        Água 500ML
+                    </div>
+                    <div class="col-3" style="float: right;">
+                        <i>R$ 3,50</i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        Frango à passarinho 2 pessoas
+                    </div>
+                    <div class="col-3" style="float: right;">
+                        <i>R$ 33,46</i>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-9">
+                        <input class="form-check-input" type="checkbox" id="defaultCheck1" checked>
+                        <b>Garçom 10%</b>
+                    </div>
+                    <div class="col-3">
+                        <i>R$ 8,69</i>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-9">
+                        <b>Total gasto</b>
+                    </div>
+                    <div class="col-3">
+                        <b><i>R$ 86,90</i></b>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-group mb-4 col-6">
+                        <label class="col-sm-12">Forma de Pagamento</label>
+
+                        <div class="col-sm-12 border-bottom">
+                            <select class="form-select shadow-none p-0 border-0 form-control-line">
+                                <option>Crédito</option>
+                                <option>Débito</option>
+                                <option>Dinheiro</option>
+                                <option>Pix</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4 col-6">
+                        <label class="col-sm-12">Juntar Conta </label>
+                        
+                        <div class="col-sm-12 border-bottom">
+                            <select class="form-select shadow-none p-0 border-0 form-control-line">
+                                <option></option>
+                                <option>Mesa 1</option>
+                                <option>Mesa 2</option>
+                                <option>Mesa 3</option>
+                                <option>Mesa 4</option>
+                                <option>Mesa 5</option>
+                                <option>Mesa 6</option>
+                                <option>Mesa 7</option>
+                                <option>Mesa 8</option>
+                                <option>Mesa 9</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group mb-4 col-12">
+                    <label class="col-md-12 p-0">CPF na nota</label>
+                    <div class="col-md-12 border-bottom p-0">
+                        <input type="text" value="245.854.754-32" class="form-control p-0 border-0">
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark">Juntar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+                <button type="button" class="btn btn-primary">pagar</button>
+            </div>
+          </div>
+        </div>
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
+    <!-- <script src="bootstrap/dist/js/bootstrap.bundle.js"></script> -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app-style-switcher.js"></script>
     <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -514,9 +628,16 @@
     <script src="js/custom.js"></script>
     <!--This page JavaScript -->
     <!--chartis chart-->
-    <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
+    <!-- <script src="plugins/bower_components/chartist/dist/chartist.min.js"></script>
     <script src="plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
-    <script src="js/pages/dashboards/dashboard1.js"></script>
+    <script src="js/pages/dashboards/dashboard1.js"></script> -->
+    <script>
+        $(document).ready(function (){
+            $("#Modal").click(function () {
+                $("#myModal").modal('show');
+            });
+        });
+    </script>
 </body>
 
 </html>
